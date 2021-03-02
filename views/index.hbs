@@ -1,0 +1,12 @@
+<h1 class="text-center mt-3">{{title}}</h1>
+<ul class="list-group">
+  {{#each messages}}
+  <li class="list-group-item">
+    <h2>{{this.text}}</h2>
+    <h4>{{this.user}}</h4>
+    <p>{{this.added}}</p>
+  </li>
+  {{/each}}
+</ul>
+
+<a href="/new" class="btn btn-secondary">new message</a>
